@@ -1,0 +1,111 @@
+body{
+    color:white;
+    background-image: url('https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section h1{
+    font-size: 3rem;
+}
+section h2{
+    font-size: 2rem;
+}
+section label{
+    font-size: 1.5rem;
+}
+
+
+input{
+    font-size: 18px;
+    outline:none ;
+    color: black;
+    margin-top:10px;
+    margin-bottom:30px;
+    margin-right: 10px;
+}
+
+
+
+div{
+    margin-right:20px;
+}
+
+.small{
+    width:50px;
+}
+
+.summary input{
+    color: #575555;
+    font-size: 23px;
+    outline: none;
+    border: none;
+}
+
+.btn{
+    margin-top:20px;
+    background-color:rgb(50 171 255);
+    color: white;
+    font-weight: 600;
+    padding: 8px;
+    border-color: transparent;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 3px 5px 5px -4px black;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: rgb(50 171 255);
+    border-color: rgb(50 171 255);
+    background-color: white;
+}
+@media (max-width:387px){
+    section h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    section h2{
+        text-align: center;
+    }
+    label{
+        margin-left:20px; 
+    }
+    input{
+        margin-left:20px;
+        width:80px;
+    }
+    .btn{
+        margin-top:3px;
+        font-size: 14.6px;
+        width:fit-content;
+    }
+    #money{
+        width:170px;
+    }
+    .summary input{
+        width:170px;
+    }
+   
+}
+@media (max-width:762px){
+
+    section h1, section h2, label, input{
+        margin-left:10px;
+    }
+    .content{
+       justify-content: left;
+        align-items: left;
+        text-align: left;
+    }
+
+}

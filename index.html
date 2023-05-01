@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <section>
+            <h1>SIP Calculator:-</h1>
+
+          
+                <form class="formcontent" onsubmit="Calculate()">
+                    <label for="investment">Monthly Investment:</label><br>
+                    <input type="number" id="money" placeholder="0" required><br>
+                    <label for="roi">Annual Rate (In %):</label><br>
+                    <input type="number" id="rate" placeholder="0" required><br>
+                    <label for="year">Year(s):</label><br>
+                    <input type="number" id="years" placeholder="0" class="small" required><br>
+
+                    <input type="submit" value="CALCULATE" class="btn">
+                    <input type="reset" onclick="Resetall()" value="RESET" class="btn">
+
+                </form>
+           
+
+
+            <div class="summary">
+                <h2>Summary:-</h2>
+                <label for="TI">Total Investment: ₹</label>
+                <input type="number" id="totalinvestment" readonly placeholder="0"><br>
+                <label for="MA">Maturity Amount: ₹</label>
+                <input type="number" id="maturity" readonly placeholder="0"><br>
+                <label for="Profit">Profit Gained: ₹</label>
+                <input type="number" id="maxprofit" readonly placeholder="0"><br>
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
